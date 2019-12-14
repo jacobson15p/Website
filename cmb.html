@@ -53,7 +53,7 @@
     <li><a href="publications.html">Publications</a></li>
   </ul>
   <div id="welcome">
-    <div id="particles-js">
+    <!--div id="particles-js"-->
       <div id="cmb">
         <h2 class="center-align">CMB Research</h2>
         <div class="divider"></div>
@@ -99,9 +99,10 @@
         <a class="btn-floating black btn-large" href="https://github.com/jacobson15p" target="_blank">
         <i class="fa fa-github"></i> Github</a>
       </div>
-    </div>
-  </div>
+    <!--/div-->
 
+  </div>
+  <div id="particles-js"></div>
 
   <!-- scripts -->
   <script src="js/particles.js"></script>
@@ -112,19 +113,6 @@
     $(document).ready(function(){
       $('.sidenav-trigger').sideNav();
     });
-  </script>
-  <script>
-    var x = $('#cmb').height();
-    document.getElementById("particles-js").style.height = x + "px";    
-    //Check if the current URL contains '#'
-    if(document.URL.indexOf("#")==-1){
-        // Set the URL to whatever it was plus "#".
-        url = document.URL+"#";
-        location = "#";
-
-        //Reload the page
-        location.reload(true);
-    }
   </script>
 
   
