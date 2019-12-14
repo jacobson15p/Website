@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="css/materialize_social.css"  media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="icon" href="science.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications - Philip Jacobson</title>
+</head>
+<body>
+
+  <!-- particles.js container -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="cmb.html">CMB Research</a></li>
+    <li class="divider"></li>
+    <li><a href="iab.html">IAB Research</a></li>
+    <li class="divider"></li>
+    <li><a href="diamond.html">Diamond Research</a></li>
+  </ul>
+  <ul class="dropdown-content" id="dropdown2">
+    <li><a href="cmb.html">CMB Research</a></li>
+    <li class="divider"></li>
+    <li><a href="iab.html">IAB Research</a></li>
+    <li class="divider"></li>
+    <li><a href="diamond.html">Diamond Research</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper blue-grey">
+      <a href="#" class="brand-logo left"></a>
+      <a href="#" data-activates="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html"><!--span class="cyan-text text-accent-3"-->About</a></li>
+        <li><a href="Philip_CV.pdf">CV</a></li>
+        <li><a class = "dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+    </div> 
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="Philip_CV.pdf">CV</a></li>
+    <li><a class = "dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown2">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+  </ul>
+
+  <div id="particles-js">
+    <div id="cmb">
+      <h2 class="center-align">Publications</h2>
+      <div class="divider"></div>
+      <br>
+      <ol>
+        <li> <b>P. Jacobson</b>, R.R. Reeber, K. Wang, S. Stoupin,  “Thermal Expansion Coefficient of Diamond in a Wide Temperature Range” <i>Diamond and Related Materials,</i> in prep<br><br>
+      </ol>
+      <br>
+      <h2 class="center-align">Presentations</h2>
+      <div class="divider"></div>
+      <br>
+      <ol>
+        <li> <b>P. Jacobson</b>, A. Rasovic, S. Jia, Y. Li, C. Franck, ”Testing for the Continuous Spectrum of X-Rays Predicted to Accompany the Photoejection of an Atomic Inner Shell Electron” American Physical Society March Meeting, March 2019<br><br>
+        <li>J. Kuan, A. Campello, G. Gardner, J. Oh, <b>P. Jacosbon</b>, C. Goddard, Y. Chen, C. Franck, ”Intra-atomic Bremsstrahlung (IAB) Search at CHESS” NSF Site Visit, March 2018.<br><br>
+        <li><b>P. Jacobson</b>, M. Niemack, P. Corlies, B. Koopman, E. Vavagiakis, N. Cothard, P. Gallardo, ”Measuring Silicon Optics with Fourier Transform Spectroscopy”, Cornell Undergraduate Astronomy Research Forum, May 2017.
+      </ol>
+    </div>
+    <div class="fixed-action-btn">
+      <a href="mailto:plj32@cornell.edu" target="_blank" class="btn-floating red btn-large"><i class="material-icons">email</i></a>
+      <a href="http://www.linkedin.com/in/philip-j-b2b972aa" target="_blank" class="btn-floating light-blue darken-2 btn-large"><i class="fa fa-linkedin"></i> Linkedin</a></a>
+      <a class="btn-floating black btn-large" href="https://github.com/jacobson15p" target="_blank">
+      <i class="fa fa-github"></i> Github</a>
+    </div>
+  </div>
+
+
+  <!-- scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav-trigger').sideNav();
+    });
+  </script>
+
+  <script type="text/javascript">
+    var x = $('#cmb').height();
+    if(x > window.innerHeight){
+      document.getElementById("particles-js").style.height = x + "px"; 
+    }
+  </script>
+
+  <!--script-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</body>
+</html>

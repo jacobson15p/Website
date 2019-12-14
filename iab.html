@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="css/materialize_social.css"  media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="icon" href="science.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research - Philip Jacobson</title>
+</head>
+<body>
+
+  <!-- particles.js container -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="cmb.html">CMB Research</a></li>
+    <li class="divider"></li>
+    <li><a href="iab.html">IAB Research</a></li>
+    <li class="divider"></li>
+    <li><a href="diamond.html">Diamond Research</a></li>
+  </ul>
+  <ul class="dropdown-content" id="dropdown2">
+    <li><a href="cmb.html">CMB Research</a></li>
+    <li class="divider"></li>
+    <li><a href="iab.html">IAB Research</a></li>
+    <li class="divider"></li>
+    <li><a href="diamond.html">Diamond Research</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper blue-grey">
+      <a href="#" class="brand-logo left"></a>
+      <a href="#" data-activates="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html"><!--span class="cyan-text text-accent-3"-->About</a></li>
+        <li><a href="Philip_CV.pdf">CV</a></li>
+        <li><a class = "dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+    </div> 
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="Philip_CV.pdf">CV</a></li>
+    <li><a class = "dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown2">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+  </ul>
+
+    <div id="particles-js">
+      <div id="cmb">
+        <h2 class="center-align">IAB Research</h2>
+        <div class="divider"></div>
+        <br>
+        <div class="row center">
+          <img src="brem.gif" class="responsive-img">
+        </div>
+        <div class="container">
+          <p>
+          Currently I am working with Prof. Carl Franck on investigating the phenomenon of Intraatomic Bremsstrahlung
+          (IAB). IAB is a type of radiation emitted from an inner shell atomic electron as the electron is decelarated
+          by the nucleus. In particular, we are searching for the so-called "infrared divergence", a phenomenon predicted 
+          to occur at low energies where the magnitude of radiation is thought to diverge. While the theory of IAB has
+          existed for decades, few experimental studies have been done recently, and many of the previous studies
+          suffer from large uncertainties. Our current work aims to improve the uncertainties of these past experiments
+          to effectively "box-in" the theory.
+          </p>
+          <p>
+          To measure this effect, we have conducted several X-ray scattering experiments off of atomically-thin Cu films
+          at Cornell's High Energy Synchrotron Source (CHESS). To extract our signal from the background, we use a coincidence
+          method, whereby we correlate events happening in two different detectors to allow us to perform a background subtraction,
+          as the IAB signal is ~1% as strong as the noise. To do this subtraction, I have written several python programs to
+          efficiently sort through billions of events to determine coincidences and then recombine them in a meaningful way.
+          In addition to our IAB work, we are planning on using the coincidence technology we have developed for Condensed-Matter
+          Physics to investigate Non-resonant Inelastic X-ray Scattering (NIXS) in TiO<sub>2</sub>.
+          </p>
+        </div>
+      </div>
+
+    <div class="fixed-action-btn">
+      <a href="mailto:plj32@cornell.edu" target="_blank" class="btn-floating red btn-large"><i class="material-icons">email</i></a>
+      <a href="http://www.linkedin.com/in/philip-j-b2b972aa" target="_blank" class="btn-floating light-blue darken-2 btn-large"><i class="fa fa-linkedin"></i> Linkedin</a></a>
+      <a class="btn-floating black btn-large" href="https://github.com/jacobson15p" target="_blank">
+      <i class="fa fa-github"></i> Github</a>
+    </div>
+  </div>
+
+
+  <!-- scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav-trigger').sideNav();
+    });
+  </script>
+
+  <script type="text/javascript">
+    var x = $('#cmb').height();
+    document.getElementById("particles-js").style.height = x + "px";
+      //Check if the current URL contains '#'
+    if(document.URL.indexOf("#")==-1){
+        // Set the URL to whatever it was plus "#".
+        url = document.URL+"#";
+        location = "#";
+
+        //Reload the page
+        location.reload(true);
+    }
+  </script>
+  <!--script-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</body>
+</html>

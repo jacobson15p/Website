@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <!--meta name="viewport" content="width=device-width, initial-scale=1.0"/-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="css/materialize_social.css"  media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="icon" href="science.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Philip Jacobson</title>
+</head>
+<body>
+
+<!-- count particles -->
+<!--div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div-->
+
+<!-- particles.js container -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="cmb.html">CMB Research</a></li>
+  <li class="divider"></li>
+  <li><a href="iab.html">IAB Research</a></li>
+  <li class="divider"></li>
+  <li><a href="diamond.html">Diamond Research</a></li>
+</ul>
+<ul class="dropdown-content" id="dropdown2">
+  <li><a href="cmb.html">CMB Research</a></li>
+  <li class="divider"></li>
+  <li><a href="iab.html">IAB Research</a></li>
+  <li class="divider"></li>
+  <li><a href="diamond.html">Diamond Research</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper blue-grey">
+    <a href="#" class="brand-logo left"></a>
+    <a href="#" data-activates="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html"><!--span class="cyan-text text-accent-3"-->About</a></li>
+      <li><a href="Philip_CV.pdf">CV</a></li>
+      <li><a class = "dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">Research</a></li>
+      <li><a href="publications.html">Publications</a></li>
+    </ul>
+  </div> 
+</nav>
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="Philip_CV.pdf">CV</a></li>
+  <li><a class = "dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown2">Research</a></li>
+  <li><a href="publications.html">Publications</a></li>
+</ul>
+
+
+  <div id="particles-js">
+    <div id="about">
+      <h2 class="header">About Me</h2>
+        <div class="divider"></div>
+        <br>
+        <div class="row">
+          <div class="col s6 push-s6">
+            Hello! My name is Philip Jacobson - I'm currently a first year PhD student in the Electrical
+            Engineering and Computer Sciences department at UC Berkeley. I work in Professor Ming Wu's group where I'm
+            researching novel brain-inspired machine learning systems implemented on photonic hardware. Previously,
+            I completed my Bachelor's degree in physics at Cornell University, where I worked on a wide range of research
+            projects. I spent two years in an Observational Cosmology lab, building a Fourier Transform Spectrometer
+            to use for characterization of anti-reflection coatings on silicon lenses, and also optimizing lens layouts
+            for microwave telescopes. Then, I spent a year and a half working in an Atomic Physics group, where I performed
+            experiments at the Cornell High Energy Synchrotron Source (CHESS) measuring fundamental interaction between x-rays and inner-shell electrons. 
+            Also during this time, I worked with a staff scientist at CHESS on developing a novel semi-empirical model for the thermal expansion of diamond. 
+            My broad previous experiences have led me to develop an interest across the stack, from the device physics in optical
+            and photonic hardware, to the systems-level design, to the software and algorithms that make it all work. Outside of lab,
+            I enjoy being hiking and camping, watching sports, and exploring! Please feel free to reach out if you'd like to chat!
+          </div>
+          <div class="col s6 pull-s6"><img class="responsive-img" src="headshot.png" id="headshot"></div>
+        </div>
+    </div>
+      <div class="fixed-action-btn">
+        <a href="mailto:plj32@cornell.edu" target="_blank" class="btn-floating red btn-large"><i class="material-icons">email</i></a>
+        <a href="http://www.linkedin.com/in/philip-j-b2b972aa" target="_blank" class="btn-floating light-blue darken-2 btn-large"><i class="fa fa-linkedin"></i> Linkedin</a></a>
+        <a class="btn-floating black btn-large" href="https://github.com/jacobson15p" target="_blank">
+        <i class="fa fa-github"></i> Github</a>
+      </div>
+  </div>
+
+
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.sidenav-trigger').sideNav();
+  });
+</script>
+
+<script type="text/javascript">
+  var x = $('#about').height();
+  document.getElementById("particles-js").style.height = x + "px";
+</script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+</body>
+</html>

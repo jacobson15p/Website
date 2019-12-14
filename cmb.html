@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link rel="stylesheet" href="css/materialize_social.css"  media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <link rel="icon" href="science.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research - Philip Jacobson</title>
+</head>
+<body>
+
+  <!-- particles.js container -->
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="cmb.html">CMB Research</a></li>
+    <li class="divider"></li>
+    <li><a href="iab.html">IAB Research</a></li>
+    <li class="divider"></li>
+    <li><a href="diamond.html">Diamond Research</a></li>
+  </ul>
+  <ul class="dropdown-content" id="dropdown2">
+    <li><a href="cmb.html">CMB Research</a></li>
+    <li class="divider"></li>
+    <li><a href="iab.html">IAB Research</a></li>
+    <li class="divider"></li>
+    <li><a href="diamond.html">Diamond Research</a></li>
+  </ul>
+  <nav>
+    <div class="nav-wrapper blue-grey">
+      <a href="#" class="brand-logo left"></a>
+      <a href="#" data-activates="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html"><!--span class="cyan-text text-accent-3"-->About</a></li>
+        <li><a href="Philip_CV.pdf">CV</a></li>
+        <li><a class = "dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown1">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+      </ul>
+    </div> 
+  </nav>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="Philip_CV.pdf">CV</a></li>
+    <li><a class = "dropdown-button" href="#!" data-beloworigin="true" data-activates="dropdown2">Research</a></li>
+    <li><a href="publications.html">Publications</a></li>
+  </ul>
+  <div id="welcome">
+    <div id="particles-js">
+      <div id="cmb">
+        <h2 class="center-align">CMB Research</h2>
+        <div class="divider"></div>
+        <br>
+        <div class="row center">
+          <img src="fts.png" class="responsive-img">
+        </div>
+        <div class="container">
+          <p>During my time working for Prof. Niemack's Cosmology group, I contributed to efforts toward the next
+            generation of Cosmic Microwave Background (CMB) telescopes, including the Atacama Cosmology Telescope (ACT),
+            CCAT-Prime, and Simon's Observatory. These telescopes aim to characterize CMB anisotropies at arcminute 
+            resolutions by surveying the sky at microwave frequencies. By doing so, we hope to accurately determine
+            cosmological constraints while also experimentally investigating the period of inflation which occured
+            immediately after the big bang. A secondary science goal of this work is a precise determination of
+            neutrino masses.</p>
+          <p>
+            My main focus during this time was building a Fourier Transform Spectrometer (FTS) for measuring
+            anti-reflection coatings on silicon wafers to be used for telescope lenses. Our design was adapted
+            from that of NASA's PIXIE missions (pictured above left), which aimed to probe primordial gravitational 
+            waves (Kogut, 2011). To ensure sensitivity to polarization, our design used a series of wire grids
+            oriented orthogonally to each other as beam splitters. Interference is produced with a movable
+            dihedral mirror mounted on a motorized stage. My work on this project encompassed both hardware and 
+            software; I designed several of the optical and mechanical components of the FTS using Zemax and
+            Solidworks, and I also wrote control software using python/Arduino for the various motorized
+            elements. I also helped with several liquid-helium cooldowns of the silicon bolometer detector,
+            and assisted in streamlining this process. Currently, the FTS is being used by the 
+            group to measure wafers fabricated at the Cornell Nanoscience Facility (CNF).</p>
+          <p>A few other small projects I did during this time included designing optics tubes for CCAT-Prime
+            and Simon's Observatory, as well as characterizing telescope beam asymmetry using gaussian beam
+            optics models in python. Optics tubes consist of a series of lenses and lyot stops 
+            used to focus the incoming telescope beam onto the detector array; typically a telescope consists
+            of several optics tubes. I created several optimization
+            routines to maximize the image quality of these optics tubes by varying the lenses parameters of the
+            aspheric lenses used in the layout while also maintaining the desired detector layout and f#. In modeling
+            the beam asymmetry, I wrote a python program to take the FFT of a truncated guassian beam offset by
+            some amount, and then measured the asymmetry in the FFT. The results from my program were found to be
+            in close agreement with that of a senior research associate in our collaboration.</p>
+        </div>
+      </div>
+      <div class="fixed-action-btn">
+        <a href="mailto:plj32@cornell.edu" target="_blank" class="btn-floating red btn-large"><i class="material-icons">email</i></a>
+        <a href="http://www.linkedin.com/in/philip-j-b2b972aa" target="_blank" class="btn-floating light-blue darken-2 btn-large"><i class="fa fa-linkedin"></i> Linkedin</a></a>
+        <a class="btn-floating black btn-large" href="https://github.com/jacobson15p" target="_blank">
+        <i class="fa fa-github"></i> Github</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.sidenav-trigger').sideNav();
+    });
+  </script>
+  <script>
+    var x = $('#cmb').height();
+    document.getElementById("particles-js").style.height = x + "px";    
+    //Check if the current URL contains '#'
+    if(document.URL.indexOf("#")==-1){
+        // Set the URL to whatever it was plus "#".
+        url = document.URL+"#";
+        location = "#";
+
+        //Reload the page
+        location.reload(true);
+    }
+  </script>
+
+  
+  <!--script-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+</body>
+</html>
