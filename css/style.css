@@ -118,6 +118,10 @@ canvas{
 img{
   border: 1px solid black;
 }
+#logo{
+  height: 64px;
+  border:0;
+}
 
 
 
